@@ -7,7 +7,7 @@ import Card from "./app/components/Card";
 import ListingDetailsScreen from "./app/components/ListingDetailsScreen";
 
 const App = () => {
-  return <ListingDetailsScreen />;
+  return <ViewImageScreen />;
 };
 
 export default App;
