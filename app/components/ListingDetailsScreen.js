@@ -2,7 +2,7 @@ import { View, Text, Image, StyleSheet } from "react-native";
 import React from "react";
 import AppText from "./AppText";
 import colors from "../config/colors";
-// import ListItem from "./ListItem";
+import ListItem from "./ListItem";
 
 const ListingDetailsScreen = () => {
   return (
@@ -11,13 +11,13 @@ const ListingDetailsScreen = () => {
       <View style={styles.detailsContainer}>
         <AppText style={styles.title}>Red jacket for Sale</AppText>
         <AppText style={styles.price}>$100</AppText>
-        {/* <View style={styles.userContainer}>
+        <View style={styles.userContainer}>
           <ListItem
             image={require("../assets/mosh.jpg")}
             title="Musa Muhammad Etudaye"
             subTitle="5 Listings"
           />
-        </View> */}
+        </View>
       </View>
     </View>
   );
