@@ -8,7 +8,7 @@ const ViewImageScreen = () => {
   return (
     <View style={styles.container}>
       <View style={styles.closeIcon}>
-        <MaterialCommunityIcons name="close" color="white" size={35} />
+        <MaterialCommunityIcons name="trash-can" color="white" size={35} />
       </View>
       <View style={styles.deleteIcon}>
         <MaterialCommunityIcons
