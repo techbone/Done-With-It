@@ -6,9 +6,15 @@ import AppButton from "./app/components/AppButton";
 import Card from "./app/components/Card";
 import ListingDetailsScreen from "./app/components/ListingDetailsScreen";
 import MessagesScreen from "./app/components/MessagesScreen";
+import Screen from "./app/components/Screen";
+import Icon from "./app/components/Icon";
 
 const App = () => {
-  return <MessagesScreen />;
+  return (
+    <Screen>
+      <Icon name="email" />
+    </Screen>
+  );
 };
 
 export default App;

@@ -14,6 +14,7 @@ const Screen = ({ children }) => {
 const styles = StyleSheet.create({
   screen: {
     padding: Constants.statusBarHeight,
+    flex: 1,
   },
 });
 
