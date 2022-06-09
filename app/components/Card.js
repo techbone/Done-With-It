@@ -3,7 +3,7 @@ import React from "react";
 
 import colors from "../config/colors";
 import AppText from "../components/AppText";
-import { Colors } from "react-native/Libraries/NewAppScreen";
+
 
 const Card = ({ title, subTitle, image }) => {
   return (
