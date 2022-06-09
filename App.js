@@ -9,13 +9,10 @@ import MessagesScreen from "./app/components/MessagesScreen";
 import Screen from "./app/components/Screen";
 import Icon from "./app/components/Icon";
 import ListItem from "./app/components/ListItem";
+import AccountScreen from "./app/screens/AccountScreen";
 
 const App = () => {
-  return (
-    <Screen>
-      <ListItem title="musa" ImageComponent={<Icon name="email" />} />
-    </Screen>
-  );
+  return <AccountScreen />;
 };
 
 export default App;

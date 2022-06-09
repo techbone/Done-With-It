@@ -3,9 +3,9 @@ import React from "react";
 
 import Constants from "expo-constants";
 
-const Screen = ({ children }) => {
+const Screen = ({ children, style }) => {
   return (
-    <SafeAreaView style={styles.screen}>
+    <SafeAreaView style={[styles.screen, style]}>
       <View>{children}</View>
     </SafeAreaView>
   );
