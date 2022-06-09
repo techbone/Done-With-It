@@ -1,4 +1,4 @@
-import { TextInput } from "react-native";
+import { Text, TextInput } from "react-native";
 import React, { useState } from "react";
 import WelcomeScreen from "./app/screens/WelcomeScreen";
 import ViewImageScreen from "./app/screens/ViewImageScreen";
@@ -11,17 +11,13 @@ import Screen from "./app/components/Screen";
 import ListItem from "./app/components/ListItem";
 import AccountScreen from "./app/screens/AccountScreen";
 import ListingScreen from "./app/screens/ListingScreen";
+import AppTextInput from "./app/components/AppTextInput";
 
 const App = () => {
+  const [firstName, setFirstName] = useState("");
   return (
     <Screen>
-      <TextInput
-        placeholder="First Name"
-        style={{
-          borderEndColor: "#ccc",
-          borderBottomWidth: 1,
-        }}
-      />
+      <AppTextInput placeholder="Username" icon="email" />
     </Screen>
   );
 };
