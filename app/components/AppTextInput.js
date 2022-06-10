@@ -1,7 +1,9 @@
 import { View, TextInput, StyleSheet } from "react-native";
 import React from "react";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+
 import colors from "../config/colors";
+import defaultStyles from "../config/styles";
 
 const AppTextInput = ({ icon, ...otherProps }) => {
   return (
@@ -14,7 +16,7 @@ const AppTextInput = ({ icon, ...otherProps }) => {
           style={styles.icon}
         />
       )}
-      <TextInput style={styles.textInput} {...otherProps} />
+      <TextInput style={defaultStyles.text} {...otherProps} />
     </View>
   );
 };
