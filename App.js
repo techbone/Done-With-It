@@ -16,9 +16,10 @@ import AppTextInput from "./app/components/AppTextInput";
 const App = () => {
   const [firstName, setFirstName] = useState("");
   return (
-    <Screen>
-      <AppTextInput placeholder="Username" icon="email" />
-    </Screen>
+    // <Screen>
+    //   <AppTextInput placeholder="Username" icon="email" />
+    // </Screen>
+    <AccountScreen />
   );
 };
 

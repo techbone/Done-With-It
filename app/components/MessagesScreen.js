@@ -23,36 +23,7 @@ const initialMessages = [
   },
 ];
 
-const MessagesScreen = () => {
-  const [messages, setMessages] = useState(initialMessages);
-  const [refreshing, setRefreshing] = useState(false);
-
-  const handleDelete = (message) => {
-    //Delete the message from messages
-    setMessages(messages.filter((m) => m.id !== message.id));
-  };
-
-  return (
-    <Screen>
-      <FlatList
-        data={messages}
-        keyExtractor={(message) => {
-          message.id.toString();
-        }}
-        renderItem={({ item }) => (
-          <ListItem
-            title={item.title}
-            subTitle={item.description}
-            image={item.image}
-            onPress={() => console.log("message selected", item)}
-            renderRightActions={() => (
-              <ListItemsDeleteAction onPress={() => handleDelete(item)} />
-            )}
-          />
-        )}
-        ItemSeparatorComponent={LIstItemSeparator}
-        refreshing={refreshing}
-        onRefresh={() => {
+hnRefresh={() => {
           setMessages([
             {
               id: "2",

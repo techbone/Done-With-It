@@ -22,6 +22,13 @@ const menuItems = [
       backgroundColor: colors.secondary,
     },
   },
+  {
+    title: "My Messages",
+    icon: {
+      name: "email",
+      backgroundColor: colors.secondary,
+    },
+  },
 ];
 
 const AccountScreen = () => {
