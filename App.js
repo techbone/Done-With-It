@@ -19,7 +19,7 @@ const App = () => {
     // <Screen>
     //   <AppTextInput placeholder="Username" icon="email" />
     // </Screen>
-    <AccountScreen />
+    <MessagesScreen />
   );
 };
 
