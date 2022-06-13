@@ -1,4 +1,4 @@
-import { Text, TextInput } from "react-native";
+import { Text, TextInput, Switch } from "react-native";
 import React, { useState } from "react";
 import WelcomeScreen from "./app/screens/WelcomeScreen";
 import ViewImageScreen from "./app/screens/ViewImageScreen";
@@ -14,12 +14,12 @@ import ListingScreen from "./app/screens/ListingScreen";
 import AppTextInput from "./app/components/AppTextInput";
 
 const App = () => {
-  const [firstName, setFirstName] = useState("");
+  const [isNew, setIsNew] = useState(false);
+
   return (
-    // <Screen>
-    //   <AppTextInput placeholder="Username" icon="email" />
-    // </Screen>
-    <MessagesScreen />
+    <Screen>
+      <Switch value={isNew} onValueChange={(newValue) => setIsNew(newValue)} />
+    </Screen>
   );
 };
 
