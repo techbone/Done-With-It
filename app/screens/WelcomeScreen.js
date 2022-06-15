@@ -14,8 +14,8 @@ const WelcomeScreen = () => {
         <Text style={styles.tagline}>Sell what you don't need </Text>
       </View>
       <View style={styles.buttonsContainer}>
-        <AppButton title={"Log In"} />
-        <AppButton title={"Register"} color="secondary" />
+        <AppButton title="Log In" />
+        <AppButton title="Register" color="secondary" />
         <View style={styles.RegisterButton}></View>
       </View>
     </ImageBackground>

@@ -1,3 +1,10 @@
+import { FlatList } from "react-native";
+import React, { useState } from "react";
+import ListItem from "./ListItem";
+import Screen from "./Screen";
+import LIstItemSeparator from "./LIstItemSeparator";
+import ListItemsDeleteAction from "./ListItemsDeleteAction";
+
 const initialMessages = [
   {
     id: 1,
@@ -12,13 +19,6 @@ const initialMessages = [
     image: require("../assets/etudaye.jpg"),
   },
 ];
-
-import { FlatList } from "react-native";
-import React, { useState } from "react";
-import ListItem from "./ListItem";
-import Screen from "./Screen";
-import LIstItemSeparator from "./LIstItemSeparator";
-import ListItemsDeleteAction from "./ListItemsDeleteAction";
 
 const MessagesScreen = () => {
   const [messages, setMessages] = useState(initialMessages);
