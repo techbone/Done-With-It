@@ -3,10 +3,8 @@ import React from "react";
 
 import AppText from "./AppText";
 
-const ErrorMessage = ({ error }) => {
-  if (!error) {
-    null;
-  }
+const ErrorMessage = ({ error, visible }) => {
+  if (!error || !visible) return null;
   return <AppText style={styles.error}>{error}</AppText>;
 };
 
