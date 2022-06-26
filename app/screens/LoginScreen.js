@@ -3,7 +3,7 @@ import { StyleSheet, Image } from "react-native";
 import { Formik } from "formik";
 import * as Yup from "yup";
 
-import AppButton from "../components/AppButton";
+import SubmitButton from "../components/SubmitButton";
 
 import Screen from "../components/Screen";
 import AppFormField from "../components/AppFormField";
@@ -23,7 +23,7 @@ const LoginScreen = () => {
         onsubmit={(values) => console.log(values)}
         validationSchema={validationSchema}
       >
-        {({ handleChange, handleSubmit, errors, setFieldTouched, touched }) => (
+        {() => (
           <>
             <AppFormField
               autoCapitalize="none"
@@ -43,7 +43,7 @@ const LoginScreen = () => {
               secureTextEntry
               textContentType="password"
             />
-            <AppButton title="Login" onPress={handleSubmit} />
+            <SubmitButton title="Log In" />
           </>
         )}
       </Formik>
