@@ -12,7 +12,7 @@ import Messages from "./app/components/MessagesScreen";
 const App = () => {
   return (
     <Screen>
-      <Messages />
+      <ListingEditScreen />
     </Screen>
   );
 };

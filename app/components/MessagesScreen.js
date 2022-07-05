@@ -8,14 +8,15 @@ import ListItemsDeleteAction from "./ListItemsDeleteAction";
 const initialMessages = [
   {
     id: 1,
-    title: "T1",
-    description: "D1",
+    title: "Musa Muhammad Etudaye",
+    description: "Hey!s this item available?",
     image: require("../assets/etudaye.jpg"),
   },
   {
     id: 2,
-    title: "T2",
-    description: "D2",
+    title: "Musa Muhammad Etudaye",
+    description:
+      "I am intrested in this item. When will you be able to post it?",
     image: require("../assets/etudaye.jpg"),
   },
 ];
