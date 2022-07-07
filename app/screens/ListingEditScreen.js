@@ -20,9 +20,9 @@ const validationSchema = Yup.object().shape({
 });
 
 const categories = [
-  { label: "Furniture", value: 1 },
-  { label: "Clothing", value: 2 },
-  { label: "Camera", value: 3 },
+  { label: "Furniture", value: 1, backgroundColor: "red", icon: "apps" },
+  { label: "Clothing", value: 2, backgroundColor: "green", icon: "email" },
+  { label: "Camera", value: 3, backgroundColor: "blue", icon: "lock" },
 ];
 
 const ListingEditScreen = ({ PickerItemComponent }) => {
@@ -44,7 +44,7 @@ const ListingEditScreen = ({ PickerItemComponent }) => {
           maxLength={8}
           name="price"
           placeholder="Price"
-          width={120}
+          width={121}
         />
         <Picker
           items={categories}
