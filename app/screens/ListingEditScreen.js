@@ -33,7 +33,7 @@ const ListingEditScreen = ({ PickerItemComponent }) => {
           title: "",
           price: "",
           description: "",
-          category: null,
+          category: void,
         }}
         onSubmit={(values) => console.log(values)}
         validationSchema={validationSchema}
@@ -44,7 +44,7 @@ const ListingEditScreen = ({ PickerItemComponent }) => {
           maxLength={8}
           name="price"
           placeholder="Price"
-          width={121}
+          width={120}
         />
         <Picker
           items={categories}
