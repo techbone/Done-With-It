@@ -21,7 +21,7 @@ const validationSchema = Yup.object().shape({
 
 const categories = [
   { label: "Furniture", value: 1, backgroundColor: "red", icon: "apps" },
-  { label: "Clothing", value: 2, backgroundColor: "green", icon: "email" },
+  { label: "books", value: 2, backgroundColor: "green", icon: "email" },
   { label: "Camera", value: 3, backgroundColor: "blue", icon: "lock" },
 ];
 
@@ -33,7 +33,7 @@ const ListingEditScreen = ({ PickerItemComponent }) => {
           title: "",
           price: "",
           description: "",
-          category: void,
+          category: null,
         }}
         onSubmit={(values) => console.log(values)}
         validationSchema={validationSchema}

@@ -9,6 +9,8 @@ import Screen from "./app/components/Screen";
 import ListItemsDeleteAction from "./app/components/ListItemsDeleteAction";
 import ListingScreen from "../DoneWithIt/app/screens/AccountScreen";
 import Messages from "./app/components/MessagesScreen";
+import AccountScreen from "./app/screens/AccountScreen";
+import ViewImageScreen from "./app/screens/ViewImageScreen";
 const App = () => {
   return (
     <Screen>
