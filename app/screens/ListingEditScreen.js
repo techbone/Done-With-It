@@ -35,7 +35,7 @@ const ListingEditScreen = ({ PickerItemComponent }) => {
           description: "",
           category: null,
         }}
-        onSubmit={(values) => console.log(values)}
+        onSubmit={(value) => console.log(value)}
         validationSchema={validationSchema}
       >
         <FormField maxLength={255} name="title" placeholder="Title" />
