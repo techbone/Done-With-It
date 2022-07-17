@@ -20,7 +20,7 @@ const validationSchema = Yup.object().shape({
 });
 
 const categories = [
-  { label: "woods", value: 1, backgroundColor: "red", icon: "apps" },
+  { label: "woods", value: 1, backgroundColor: "blue", icon: "apps" },
   { label: "Clothing", value: 2, backgroundColor: "green", icon: "email" },
   { label: "Camera", value: 3, backgroundColor: "blue", icon: "lock" },
 ];
