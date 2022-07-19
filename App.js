@@ -14,7 +14,7 @@ import ViewImageScreen from "./app/screens/ViewImageScreen";
 const App = () => {
   return (
     <Screen>
-      <ListingEditScreen />
+      <AccountScreen />
     </Screen>
   );
 };

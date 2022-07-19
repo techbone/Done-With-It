@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
     marginVertical: 10,
   },
   icon: {
-    marginRight: 10,
+    marginRight: 12,
   },
   textInput: {
     color: colors.dark,

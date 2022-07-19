@@ -11,7 +11,7 @@ const AppTextInput = ({ icon, width = "100%", ...otherProps }) => {
       {icon && (
         <MaterialCommunityIcons
           name={icon}
-          size={25}
+          size={20}
           color={colors.medium}
           style={styles.icon}
         />
