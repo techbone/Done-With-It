@@ -74,7 +74,7 @@ const AppPicker = ({
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: colors.light,
+    backgroundColor: colors.medium
     borderRadius: 25,
     flexDirection: "row",
     padding: 15,
