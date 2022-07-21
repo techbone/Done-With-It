@@ -11,10 +11,11 @@ import ListingScreen from "../DoneWithIt/app/screens/AccountScreen";
 import Messages from "./app/components/MessagesScreen";
 import AccountScreen from "./app/screens/AccountScreen";
 import ViewImageScreen from "./app/screens/ViewImageScreen";
+import MessagesScreen from "./app/components/MessagesScreen";
 const App = () => {
   return (
     <Screen>
-      <AccountScreen />
+      <ListingEditScreen />
     </Screen>
   );
 };
