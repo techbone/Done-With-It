@@ -28,6 +28,7 @@ const App = () => {
     <Screen>
       <Button title="Select Image" onPress={selectImage} />
       <Image source={{ uri: ImageUri }} style={{ width: 200, height: 200 }} />
+      <ImageInput imageUri={ImageUri} />
     </Screen>
   );
 };
