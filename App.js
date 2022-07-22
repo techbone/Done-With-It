@@ -10,7 +10,7 @@ const requestPermission = async () => {
 };
 
 const App = () => {
-  const [ImageUri, SetImageUri] = useState(false);
+  const [ImageUri, setImageUri] = useState(false);
 
   useEffect(() => {
     requestPermission();
@@ -26,9 +26,10 @@ const App = () => {
   };
   return (
     <Screen>
-      <Button title="Select Image" onPress={selectImage} />
-      <Image source={{ uri: ImageUri }} style={{ width: 200, height: 200 }} />
-      <ImageInput imageUri={ImageUri} />
+      <ImageInput
+        onChangeImage={(uri) => setImageUri(uri)}
+        imageUri={ImageUri}
+      />
     </Screen>
   );
 };
