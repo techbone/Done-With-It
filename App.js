@@ -1,25 +1,10 @@
-import React, { useEffect, useState } from "react";
 import Screen from "./app/components/Screen";
-import * as ImagePicker from "expo-image-picker";
-import { Button, Image } from "react-native";
-import ImageInput from "./app/components/ImageInput";
-import ImageInputList from "./app/components/ImageInputList";
+import ListingEditScreen from "./app/screens/ListingEditScreen";
 
 const App = () => {
-  const [imageUris, setImageUris] = useState([]);
-  const handleAdd = (ur) => {
-    setImageUris([...imageUris, ur]);
-  };
-  const handleRemove = (uri) => {
-    setImageUris(imageUris.filter((imageUri) => imageUri !== uri));
-  };
   return (
     <Screen>
-      <ImageInputList
-        ImageUri={imageUris}
-        onRemoveImage={handleRemove}
-        onAddImage={handleAdd}
-      />
+      <ListingEditScreen />
     </Screen>
   );
 };

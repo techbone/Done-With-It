@@ -8,7 +8,7 @@ const FormImagePicker = ({ name }) => {
   const { errors, setFieldValue, touched, values } = useFormikContext();
   const imageUris = values[name];
 
-  const handleAdd = (ur) => {
+  const handleAdd = (uri) => {
     setFieldValue(name, [...imageUris, uri]);
   };
   const handleRemove = (uri) => {
