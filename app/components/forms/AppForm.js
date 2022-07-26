@@ -5,7 +5,7 @@ const AppForm = ({ initialValues, onSubmit, validationSchema, children }) => {
   return (
     <Formik
       initialValues={initialValues}
-      onsubmit={onSubmit}
+      onSubmit={onSubmit}
       validationSchema={validationSchema}
     >
       {() => <>{children}</>}
