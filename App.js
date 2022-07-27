@@ -5,7 +5,7 @@ import LoginScreen from "./app/screens/LoginScreen";
 const App = () => {
   return (
     <Screen>
-      <ListingEditScreen />
+      <LoginScreen />
     </Screen>
   );
 };
