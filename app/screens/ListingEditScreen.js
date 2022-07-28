@@ -118,7 +118,7 @@ const ListingEditScreen = () => {
         <Picker
           items={categories}
           name="category"
-          numberOfColumns={3}
+          numberOfColumns={4}
           PickerItemComponent={CategoryPickerItem}
           placeholder="Category"
           width="50%"
