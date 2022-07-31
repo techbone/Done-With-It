@@ -113,7 +113,7 @@ const ListingEditScreen = () => {
           maxLength={8}
           name="price"
           placeholder="Price"
-          width={121}
+          width={120}
         />
         <Picker
           items={categories}
@@ -127,7 +127,7 @@ const ListingEditScreen = () => {
         <FormField
           maxLength={255}
           multiline
-          name="description"
+          name="descriptions"
           numberOfLines={3}
           placeholder="Description"
         />
