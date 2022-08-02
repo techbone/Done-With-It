@@ -127,7 +127,7 @@ const ListingEditScreen = () => {
         <FormField
           maxLength={255}
           multiline
-          name="descriptions"
+          name="description"
           numberOfLines={3}
           placeholder="Description"
         />
