@@ -12,7 +12,8 @@ const ImageInputList = ({ ImageUri = [], onRemoveImage, onAddImage }) => {
         horizontal
         onContentSizeChange={() => scrollView.current.scrollToEnd()}
       >
-        <View style={styles.container}>
+        <View style={styles.con}>
+          {}
           {ImageUri.map((uri, uriIndex) => (
             <View key={uriIndex} style={styles.image}>
               <ImageInput
@@ -29,7 +30,7 @@ const ImageInputList = ({ ImageUri = [], onRemoveImage, onAddImage }) => {
 };
 
 const styles = StyleSheet.create({
-  container: {
+  con: {
     flexDirection: "row",
   },
   image: {
