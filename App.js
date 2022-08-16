@@ -5,18 +5,23 @@ import ListingEditScreen from "./app/screens/ListingEditScreen";
 import LoginScreen from "./app/screens/LoginScreen";
 
 const App = () => {
-  // const [imageUris, setImageUris] = useState([]);
+  const [imageUris, setImageUris] = useState([]);
 
-  // const handleAdd = (uri) => {
-  //   setImageUris([...imageUris, uri]);
-  // };
+  const handleAdd = (uri) => {
+    return setImageUris([...imageUris, uri]);
+  };
 
-  // const handleRemove = (uri) => {
-  //   setImageUris(imageUris.filter((imageUris) => imageUris !== uri));
-  // };
+  const handleRemove = (uri) => {
+    return setImageUris(imageUris.filter((imageUris) => imageUris !== uri));
+  };
 
   return (
     <Screen>
+      {/* <ImageInputList
+        key={imageUris}
+        onAddImage={handleAdd}
+        onRemoveImage={handleRemove}
+      /> */}
       <ListingEditScreen />
     </Screen>
   );
