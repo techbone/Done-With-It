@@ -17,11 +17,6 @@ const App = () => {
 
   return (
     <Screen>
-      {/* <ImageInputList
-        key={imageUris}
-        onAddImage={handleAdd}
-        onRemoveImage={handleRemove}
-      /> */}
       <ListingEditScreen />
     </Screen>
   );
