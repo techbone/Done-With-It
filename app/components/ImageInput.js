@@ -61,10 +61,10 @@ const styles = StyleSheet.create({
     backgroundColor: colors.light,
     borderRadius: 15,
     height: 100,
+    width: 100,
     justifyContent: "center",
     alignItems: "center",
     overflow: "hidden",
-    width: 100,
   },
   Image: {
     width: "100%",
