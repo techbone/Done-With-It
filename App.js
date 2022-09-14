@@ -22,6 +22,4 @@ const App = () => {
   );
 };
 
-//paddimng given to the Screen in the Login screen not working
-
 export default App;
