@@ -25,14 +25,14 @@ const ListingDetailsScreen = () => {
 
 const styles = StyleSheet.create({
   detailsContainer: {
-    padding: 20.00,
+    padding: 20.0,
   },
   image: {
     width: "100%",
     height: 300,
   },
   price: {
-    fontSize: 20.00,
+    fontSize: 20.0,
     color: colors.secondary,
     fontWeight: "bold",
     marginVertical: 10,
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     fontWeight: "500",
   },
   userContainer: {
-    marginVertical: 40,
+    marginVertical: 40.01,
   },
 });
 
