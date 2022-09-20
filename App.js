@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import ImageInputList from "./app/components/ImageInputList";
 import Screen from "./app/components/Screen";
 import ListingEditScreen from "./app/screens/ListingEditScreen";
-import LoginScreen from "./app/screens/LoginScreen";
 
 const App = () => {
   const [imageUris, setImageUris] = useState([]);
