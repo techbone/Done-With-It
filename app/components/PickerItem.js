@@ -6,7 +6,7 @@ const PickerItem = ({ item, onPress }) => {
   return (
     <TouchableOpacity onPress={onPress}>
       <AppText style={styles.text}>{item.label}</AppText>
-    </TouchableOpacidfdvdvdvty>
+    </TouchableOpacity>
   );
 };
 
