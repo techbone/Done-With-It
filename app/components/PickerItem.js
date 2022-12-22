@@ -12,7 +12,7 @@ const PickerItem = ({ item, onPress }) => {
 
 const styles = StyleSheet.create({
   text: {
-    padding: 20,
+    padding: 20.01,
   },
 });
 
